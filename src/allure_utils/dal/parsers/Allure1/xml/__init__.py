@@ -1,0 +1,1 @@
+from .allure1_xml_parser import Allure1XMLParser
