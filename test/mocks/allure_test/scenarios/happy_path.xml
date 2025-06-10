@@ -1,0 +1,71 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1' stop='2' version='1'>
+    <name>TestSuiteName</name>
+    <title>TestSuiteTitle</title>
+    <description>TestSuiteDescription</description>
+    <test-cases>
+        <test-case start='1' status='passed' stop='2'>
+            <name>TestCase1Name</name>
+            <title>TestCase1Title</title>
+            <description type='text'>TestCase1Description</description>
+            <labels>
+                <label name='label1Name' value='label1Value'/>
+                <label name='label2Name' value='label2Value'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='parameter1Name' value='parameter1Value'/>
+                <parameter kind='system-property' name='parameter2Name' value='parameter2Value'/>
+                <parameter kind='environment-variable' name='parameter3Name' value='parameter3Value'/>
+            </parameters>
+            <attachments>
+                <attachment title='attachment1Title' source='attachment1Source' type='attachment1Type'/>
+                <attachment title='attachment2Title' source='attachment2Source' type='attachment2Type'/>
+            </attachments>
+            <steps>
+                <step start='1' status='failed' stop='2'>
+                    <name>Step1Name</name>
+                    <title>Step1Title</title>
+                    <attachments>
+                        <attachment title='attachment1Title' source='attachment1Source' type='attachment1Type'/>
+                        <attachment title='attachment2Title' source='attachment2Source' type='attachment2Type'/>
+                    </attachments>
+                    <steps>
+                        <step start='1' status='broken' stop='2'>
+                            <name>Step1Name</name>
+                            <title>Step1Title</title>
+                        </step>
+                    </steps>
+                </step>
+                 <step start='1' status='broken' stop='2'>
+                    <name>Step2Name</name>
+                    <title>Step2Title</title>
+                </step>
+                 <step start='1' status='passed' stop='2'>
+                    <name>Step3Name</name>
+                    <title>Step3Title</title>
+                </step>
+                 <step start='1' status='canceled' stop='2'>
+                    <name>Step4Name</name>
+                    <title>Step4Title</title>
+                </step>
+                <step start='1' status='pending' stop='2'>
+                    <name>Step5Name</name>
+                    <title>Step5Title</title>
+                </step>
+            </steps>
+        </test-case>
+        <test-case start='1' status='failed' stop='2'>
+            <name>TestCase2Name</name>
+            <title>TestCase2Title</title>
+            <description type='text'>TestCase2Description</description>
+            <failure>
+                <message>TestCaseFailureMessage</message>
+                <stack-trace>TestCaseFailureStackTrace</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name='label1Name' value='label1Value'/>
+        <label name='label2Name' value='label2Value'/>
+    </labels>
+</ns2:test-suite>
